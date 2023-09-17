@@ -2,8 +2,8 @@ import pickle
 import streamlit as st
 
 # Load the pre-trained model and data
-music = pickle.load(open("C:/Users/sipis/Downloads/df", 'rb'))
-similarity = pickle.load(open("C:/Users/sipis/Downloads/model", 'rb'))
+music = pickle.load(open("df", 'rb'))
+similarity = pickle.load(open("model", 'rb'))
 
 def recommend(song, num_recommendations):
     index = music[music['song'] == song].index[0]
